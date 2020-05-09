@@ -1,4 +1,4 @@
-# Field Service Pro
+# 🛠 Field Service Pro
 ## a job ticket manager for field service technicians
 
 Field Service Pro (FSP) is a full stack JavaScript app, built on NodeJS and MongoDB.
