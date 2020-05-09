@@ -1,82 +1,97 @@
-<a href="https://chronoblog.now.sh" target="_blank">
-<img src="https://github.com/Chronoblog/gatsby-theme-chronoblog/raw/master/assets/st-banner-chronoblog.png" alt="Chronoblog - Gatsby Theme" />
-</a>
-
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
 <h1 align="center">
-Gatsby Starter Chronoblog - starter for Chronoblog Gatsby Theme
+  Starter for the official Gatsby blog theme
 </h1>
 
-[![npm](https://img.shields.io/npm/v/gatsby-theme-chronoblog?color=brightgreen)](https://www.npmjs.com/package/gatsby-theme-chronoblog) [![node](https://img.shields.io/node/v/gatsby-theme-chronoblog)](https://www.npmjs.com/package/gatsby-theme-chronoblog)
+Quickly get started using the Gatsby blog theme! This starter creates a new Gatsby site that is preconfigured to work with the [official Gatsby blog theme](https://www.npmjs.com/package/gatsby-theme-blog).
 
-This starter is the standard way to start a Chronoblog Gatsby Theme website.
+## 🚀 Quick start
 
-What is a Chronoblog?
+1.  **Create a Gatsby site.**
 
-> Chronoblog is a Gatsby js theme specifically designed to create a personal website. The main idea of ​​Chronoblog is to allow you not only to write a personal blog but also to keep a record of everything important that you have done.
+    Use the Gatsby CLI to create a new site, specifying the blog theme starter.
 
-Read more about Chronoblog Gatsby Theme here: [github.com/Chronoblog/gatsby-theme-chronoblog](https://github.com/Chronoblog/gatsby-theme-chronoblog)
+    ```shell
+    # create a new Gatsby site using the blog theme starter
+    gatsby new my-themed-blog https://github.com/gatsbyjs/gatsby-starter-blog-theme
+    ```
 
-**Live demo of this starter: [https://chronoblog.now.sh](https://chronoblog.now.sh/)**
+2.  **Start developing.**
 
-## Features
+    Navigate into your new site’s directory and start it up.
 
-- Specially designed to create a personal website
-- A universal Feed where you can display any type of content. Not only blog posts, but also links to projects, podcasts, videos, etc.
-- Search and Tags for organizing content
-- A simple change of primary and secondary colors of the site, fonts, radius of curvature of elements, etc (thanks to Theme UI theming)
-- Clean and Universal UI
-- Mobile friendly, all elements and custom images are adapted to any screen
-- Light/Dark mode
-- Easy customization of icons and links to your social networks
-- MDX for the main menu of the site, footer and other elements of the site
-- MDX for pages and content
-- Code syntax highlighting
-- SEO (OpenGraph and Twitter) out of the box with default settings that make sense (thanks to React Helmet)
+    ```shell
+    cd my-themed-blog/
+    gatsby develop
+    ```
 
-## How to start using Chronoblog Starter
+3.  **Open the code and start customizing!**
 
-If you have `gatsby-cli`:
+    Your site is now running at `http://localhost:8000`!
 
-```sh
-gatsby new chronoblog-site https://github.com/Chronoblog/gatsby-starter-chronoblog
+    To get started, check out the guide to [using the Gatsby blog theme starter](https://gatsbyjs.org/docs/themes/using-a-gatsby-theme), or the longer, [more detailed tutorial](https://gatsbyjs.org/tutorial/using-a-theme).
 
-cd chronoblog-site
+## 🧐 What's inside?
 
-gatsby develop
+Here are the top-level files and directories you'll see in a site created using the blog theme starter:
+
+```text
+gatsby-starter-blog-theme
+├── content
+│   ├── assets
+│   │   └── avatar.png
+│   └── posts
+│       ├── hello-world.mdx
+│       └── my-second-post.mdx
+├── src
+│   └── gatsby-theme-blog
+│       ├── components
+│       │   └── bio-content.js
+│       └── gatsby-theme-ui
+│           └── colors.js
+├── .gitignore
+├── .prettierrc
+├── gatsby-config.js
+├── LICENSE
+├── package-lock.json
+├── package.json
+└── README.md
 ```
 
-Or using git clone:
+1.  **`/content`**: A content folder holding assets that the theme expects to exist. This will vary from theme to theme -- this starter is set up to get you started with the blog theme, which expects an image asset for your avatar, and blog post content. Replace the avatar image file, delete the demo posts, and add your own!
 
-```sh
-git clone git@github.com:Chronoblog/gatsby-starter-chronoblog.git chronoblog-site
+2.  **`/src`**: You will probably want to customize your site to personalize it. The files under `/src/gatsby-theme-blog` _shadow_, or override, the files of the same name in the `gatsby-theme-blog` package. To learn more about this, check out the [guide to getting started with using the blog theme starter](https://gatsbyjs.org/docs/themes/using-a-gatsby-theme).
 
-cd chronoblog-site
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-npm i
+4.  **`.prettierrc`**: This file tells [Prettier](https://prettier.io/) which configuration it should use to lint files.
 
-npm start
-```
+5.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. When using themes, it's where you'll include the theme plugin, and any customization options the theme provides.
 
-Your site is now running at http://localhost:8000
+6.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-## Deploying
+7.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-### Deploying to ZEIT Now
+8.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-Gatsby Docs: [www.gatsbyjs.org/docs/deploying-to-zeit-now](https://www.gatsbyjs.org/docs/deploying-to-zeit-now/)
+9.  **`README.md`**: A text file containing useful reference information about your project.
 
-Quick Deployment:
+## 🎓 Learning Gatsby
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/Chronoblog/gatsby-starter-chronoblog)
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/).
 
-### Deploying to Netlify
+Here are some places to start:
 
-Gatsby Docs: [www.gatsbyjs.org/docs/deploying-to-netlify](https://www.gatsbyjs.org/docs/deploying-to-netlify/)
+### Themes
 
-Quick Deployment:
+- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.org/docs/themes/).
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Chronoblog/gatsby-starter-chronoblog)
+### General
 
-## More information
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-For complete information, go to the main repository: [github.com/ganevru/gatsby-theme-chronoblog](https://github.com/Chronoblog/gatsby-theme-chronoblog)
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.
